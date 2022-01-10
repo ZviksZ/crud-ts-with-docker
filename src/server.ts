@@ -1,6 +1,6 @@
 import express from 'express'
 import db from './config/database.config'
-import todoRouter from './route';
+import todoRouter from './modules/todo/route';
 
 db.sync().then(() => {
    console.log('connect to db')
